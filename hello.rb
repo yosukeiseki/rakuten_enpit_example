@@ -13,4 +13,5 @@ get '/' do
   # Use genre id to fetch genre object
   @rankings = RakutenWebService::Ichiba::Item.ranking(:age => 30, :sex => 0)
   erb :item_ranking
+
 end
